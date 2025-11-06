@@ -123,7 +123,13 @@ def contact(num):
 
 @bot.message_handler(commands=['run'])
 def send_run(self):
-    send_notification('مرحبا استاذ انا مستعد للعمل مرة اخرة')
+    send_notification('''مرحبا استاذ انا مستعد للعمل مرة اخرة وهاذي الأوامر الي خلاها الأستاذ محمد حمزة
+/json - ارسال ملف الطلاب
+/reset - لأعادة تعين عدد المحاولات الطالب
+/run لأرسال هذا الأشعار
+/start لبدء الأختبار
+كلمة الغاء لألغاء الأختبار ( للطلاب )
+''')
 
 @bot.message_handler(commands=['start'])
 def start(call):
